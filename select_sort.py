@@ -2,14 +2,11 @@
 
 # Find the smallest element in the given array
 def find_smallest(array):
-
     # Take element with index 0, and assign it to variable
     smallest = array[0]
     smallest_index = 0
-
     # Start 'for loop' from index 1
     for i in range(1, len(array)):
-
         # Compare element with index 'i' and current 'smallest' variable .
         # According to the comparision, assign new value to the 'smallest'
         # variable or continue with the current one.
@@ -22,10 +19,8 @@ def find_smallest(array):
 # Create a new array for the sorted numbers
 def selection_sort(array):
     new_array = []
-
     # Repeat for every element in the array
     for i in range(len(array)):
-
         # Call the 'find_smallest' function
         smallest = find_smallest(array)
         # Append returned value to the 'new_array' and remove it from original list
