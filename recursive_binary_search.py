@@ -6,6 +6,8 @@ import unittest
 
 def recursive_binary_search(array, left, right, searching_number):
 
+    print(array[left:right + 1])
+
     # Check base case, continue while it is true, otherwise searching number
     # is not in the array
     if right >= left:
@@ -33,7 +35,7 @@ def recursive_binary_search(array, left, right, searching_number):
 
 
 # Test arrays
-arr = [2, 3, 4, 10, 40]
+arr = [2, 3, 4, 10, 40, 50, 60, 85, 100]
 
 # Function call
 print(recursive_binary_search(arr, 0, len(arr) - 1, 10))

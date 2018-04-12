@@ -30,6 +30,7 @@ def selection_sort(array):
         smallest = find_smallest(array)
         # Append returned value to the 'new_array' and remove it from original list
         new_array.append(array.pop(smallest))
+        print(new_array)
     # Return new sorted array
     return new_array
 

@@ -20,9 +20,11 @@ def binary_search_algorithm(list_of_numbers, number_to_find):
         if number_guess > number_to_find:
             high = middle - 1
             steps += 1
+            print(list_of_numbers[low:high + 1])
         else:
             low = middle + 1
             steps += 1
+            print(list_of_numbers[low:high + 1])
     return None
 
 
@@ -30,7 +32,7 @@ my_list = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35]
 
 binary_search_algorithm(my_list, 3)
 binary_search_algorithm(my_list, 9)
-binary_search_algorithm(my_list, -1)
+# binary_search_algorithm(my_list, -1)
 
 
 class TestBinarySearch(unittest.TestCase):
