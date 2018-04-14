@@ -9,6 +9,7 @@ def insertion_sort(array):
         # Creating a variable to keep the value for current element to sort
         current_value = array[index]
         position = index
+        print(array)
 
         # Shifting elements of sorted sublist until they are greater than current value
         while position > 0 and array[position - 1] > current_value:
